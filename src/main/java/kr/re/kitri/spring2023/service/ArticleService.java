@@ -13,4 +13,8 @@ public class ArticleService {
     public String getAllArticles(){
         return dao.selectAllArticles();
     }
+
+    public List<Article> getAllPosts(){
+        return dao.selectAllArticles();
+    }
 }
