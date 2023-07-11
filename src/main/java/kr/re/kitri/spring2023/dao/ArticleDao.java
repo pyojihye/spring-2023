@@ -10,12 +10,14 @@ import java.util.List;
 public class ArticleDao {
 //    public String selectAllArticles(){
 //        return "미니 인스타그램의 전체 글 보기";
-//    }
+
 
     public List<Article> selectAllArticles(){
         List<Article> article = new ArrayList<>();
 
-        article.add(new Article(id:1, title:"스프링", body:"재밌어요", author:"kim"));
+        article.add(new Article(1, "스프링", "재밌어요", "kim"));
+        article.add(new Article(2, "런던", "여행", "park"));
+        article.add(new Article(3, "겨울", "춥다", "choi"));
 
         return article;
     }
